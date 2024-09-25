@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="form.css">
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Job Application</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+
+        <form id="jobForm">
+
+            <fieldset class="fieldStyle">
+                <legend>Personal Information:</legend>
+            <div class="formStyle"> 
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="formStyle">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="formStyle">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="03[0-9]{2}[0-9]{7}" placeholder="03xx-xxxxxxx" required>
+            </div>
+            <div class="formStyle">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="formStyle">
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" required>
+            </div>
+            <div class="formStyle">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="formStyle">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="formStyle">
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>Resume and Cover Letter</legend>
+            <div class="formStyle">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="formStyle">
+                <label for="coverLetter">Cover Letter:</label>
+                <textarea id="coverLetter" name="coverLetter" rows="6" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>Education</legend>
+            <div class="formStyle">
+                <label for="education">Highest Level of Education Attained:</label>
+                <input type="text" id="education" name="education" required>
+            </div>
+            <div class="formStyle">
+                <label for="school">Name of School/University:</label>
+                <input type="text" id="school" name="school" required>
+            </div>
+            <div class="formStyle">
+                <label for="major">Major/Area of Study:</label>
+                <input type="text" id="major" name="major" required>
+            </div>
+            <div class="formStyle">
+                <label for="gradYear">Graduation Year:</label>
+                <input type="text" id="gradYear" name="gradYear" required>
+            </div>
+            <div class="formStyle">
+                <label for="empHis">Employement History:</label>
+                <input type="text" id="empHis" name="emphis" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>Previous Job Titles</legend>
+            <div class="formStyle">
+                <label for="companies">Company Names:</label>
+                <input type="text" id="companies" name="companies" required>
+            </div>
+            <div class="formStyle">
+                <label for="employmentDates">Employment Dates:</label>
+                <input type="text" id="employmentDates" name="employmentDates" required>
+            </div>
+            <div class="formStyle">
+                <label for="responsibilities">Job Responsibilities:</label>
+                <input type="text" id="responsibilities" name="responsibilities" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>Skills</legend>
+            <div class="formStyle">
+                <label for="skills">Relevant Skills:</label>
+                <input type="text" id="skills" name="skills" required>
+            </div>
+            <div class="formStyle">
+                <label for="certifications">Certifications:</label>
+                <input type="text" id="certifications" name="certifications" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>Availaibility</legend>
+            <div class="formStyle">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+            <div class="formStyle">
+                <label for="workSchedule">Preferred Work Schedule:</label>
+                <input type="text" id="workSchedule" name="workSchedule" required>
+            </div>
+            <div class="formStyle">
+                <label for="relocate">Willingness to Relocate:</label>
+                <select id="relocate" name="relocate" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>References</legend>
+            <div class="formStyle">
+                <label for="refName">Reference Name:</label>
+                <input type="text" id="refName" name="refName" required>
+            </div>
+            <div class="formStyle">
+                <label for="refContact">Reference Contact Information:</label>
+                <input type="text" id="refContact" name="refContact" required>
+            </div>
+            <div class="formStyle">
+                <label for="relationship">Relationship to Applicant:</label>
+                <input type="text" id="relationship" name="relationship" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>Additional Questions</legend>
+            <div class="form-group">
+                <label for="whyWorkHere">Why do you want to work for this company?</label>
+                <textarea id="whyWorkHere" name="whyWorkHere" rows="6" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldStyle">
+            <legend>Consent and Agreement</legend>
+            <div class="formStyle">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                <label for="agreeTerms">I agree to the terms and conditions</label>
+            </div>
+            <div class="formStyle">
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                <label for="privacyPolicy">I acknowledge the Privacy Policy</label>
+            </div>
+        </fieldset>
+
+        <div class="formStyleBtn">
+            <button id="submitBtn" type="submit">Submit Application</button>
+           <button id="viewTableBtn">View Applications as Table</button>
+        </div>
+        </form>
+
+        <div id="applicationsTable"></div>
+    </div>
+</body>
+</html>
