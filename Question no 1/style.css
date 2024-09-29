@@ -55,7 +55,7 @@ nav ul li a {
 }
 .content {
   background-image: url("assignment.png");
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   width: auto;
   height: 600px;
@@ -72,18 +72,18 @@ nav ul li a {
   padding-right: 50px;
 }
 nav .ul2 li {
-  margin: 0 15px; /* Adjust the spacing here */
-  padding: 0px 0 0px 10px; /* Padding between the text and border of each item */
+  margin: 0 15px;
+  padding: 0px 0 0px 10px;
 }
 .logo {
   display: flex;
-  flex-direction: row; /* Stack bars vertically */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .bar {
-  background-color: black; /* Color of the bars */
+  background-color: black;
 }
 
 .vertical-bar {
@@ -101,10 +101,90 @@ nav .ul2 li {
 }
 
 .horizontal-bar {
-  width: 25px; /* Width of horizontal bars */
-  height: 4px; /* Height of horizontal bars */
-  margin: 1.5px 0; /* Space between horizontal bars */
+  width: 25px;
+  height: 4px;
+  margin: 1.5px 0;
 }
 .logo {
   padding: 0 10px 0 40px;
+}
+.icon {
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+}
+h1 {
+  display: none;
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+  .nav2 ul {
+    display: flex;
+    flex-direction: row;
+    top: 5px;
+    padding: 10px 0 10px 20px;
+  }
+
+  nav ul li {
+    margin: 10px 15px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  nav.active .menu-toggle {
+    display: none;
+  }
+  .content {
+    margin: 5px 50px 0 50px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  h1 {
+    display: flex;
+  }
+  .icon {
+    display: flex;
+    padding: 14px 0 0 0;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    margin: 5px 30px 0 30px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("mobile.png");
+    background-position: center;
+  }
+  .icon {
+    display: flex;
+    padding: 14px 0 0 0;
+    font-size: 0.75rem;
+  }
+  h1 {
+    display: flex;
+    font-size: 18px;
+    padding: 5px 0 0 20px;
+  }
 }
