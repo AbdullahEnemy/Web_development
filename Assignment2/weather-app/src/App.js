@@ -26,7 +26,6 @@ function App() {
 
         const weatherData = response.data.list;
 
-        // Get current weather
         const currentWeatherData = weatherData[0];
         let weatherIcon = getWeatherIcon(currentWeatherData.weather[0].main);
 
@@ -36,10 +35,9 @@ function App() {
           icon: weatherIcon,
         });
 
-        // Prepare forecast for the next 4 days
         const dailyForecast = [];
         for (let i = 0; i < 4; i++) {
-          const dayForecast = weatherData[i * 8]; // Get the forecast for each day
+          const dayForecast = weatherData[i * 8];
           dailyForecast.push({
             day: new Date(dayForecast.dt * 1000).toLocaleString("en-US", {
               weekday: "long",
